@@ -1,0 +1,51 @@
+{{ define "main" }}
+<section class="section">
+  <article>  
+    <div class="blog__container">  
+      <h1 class="blog__title">{{ .Title }}</h1>
+      <div class="blog__details">  
+        <!-- <div class="author-image-container">   -->
+          <!--     <img src="" alt="author-image" />   -->
+          <!-- </div>   -->
+        <div class="blog__info">  
+          <p>By  author:
+	    <span>
+	      {{ range .Param "authors" }}
+	      {{ . |humanize}}
+	      {{ end }}
+	    </span>
+	  </p>
+	  <p><time>{{ .PublishDate.Format "January 2, 2006" }}</time> |   
+	    {{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} 	                         minutes {{ end }} read
+	  </p>  
+	</div>  
+	<div class="blog__categories">  
+	  {{ if .Param "categories" }}
+	  {{ range .Params.categories }}
+	  <span><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}"> &nbsp {{ . }} &nbsp </a></span>
+	  {{end}}
+	  {{ end }}
+	</div>
+	<div class="blog_tags">
+	  {{ if .Param "tags" }}
+	  Tags:
+	  {{ range .Params.tags }}
+	  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"> &nbsp {{ . }} &nbsp </a>
+	  {{end}}
+	  {{ end }}
+	</div>
+      </div>
+      <hr style="width:100%;height:0.5px;margin-left:auto;">
+      <div class="content">  
+	{{ .Content }}
+	{{ if .Page.Store.Get "hasMermaid" }}
+	<script type="module">
+	  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+	  mermaid.initialize({ startOnLoad: true });
+	</script>
+	{{ end }}
+      </div>  
+    </div>  
+  </article>  
+</section>  
+{{ end }}  

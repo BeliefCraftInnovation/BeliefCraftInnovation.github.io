@@ -1,0 +1,11 @@
+{{ $child_pages := union .Sections .Pages }}
+
+{{ range $child_pages.ByTitle }}
+{{ if .Title }}
+<li> <a href="{{ .RelPermalink }}"> {{ .Title }}</a> </li>
+{{end}}
+{{ if or (.Sections) (.Pages) }}
+{{ partial "display-all.html" . }}
+{{ end }}
+{{ end }}
+

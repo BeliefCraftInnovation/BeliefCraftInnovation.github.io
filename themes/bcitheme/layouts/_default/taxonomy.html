@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main>
+  <div>
+    <h2>{{ .Title | humanize}}</h2>
+  </div>
+  <ul class="taxonomy_box inline">
+  {{ if eq .Type "categories" }}
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li><a href="/categories/{{ $name | urlize }}">{{ $name | humanize }} <sup><span>{{ $taxonomy.Count }}</span></sup></a></li>
+    {{end}}
+    {{ else }}
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  <li><a href="/tags/{{ $name | urlize }}">{{ $name | humanize }} <sup><span>{{ $taxonomy.Count }}</span></sup></a></li>
+    {{end}}
+    {{ end  }}
+  </ul>
+  
+  <div>
+    {{ range .Pages }}
+    {{ if eq .Type "posts" }}
+    <li><a href="{{ .Permalink }}">{{ .Title }} </a></li>  
+    {{ end }}
+    {{ end }}
+  </div>
+</main>
+{{ end }}

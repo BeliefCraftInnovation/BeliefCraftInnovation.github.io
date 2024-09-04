@@ -1,0 +1,13 @@
+{{ define "main" }}
+<main>
+  {{ .Content }}
+  <!-- {{ partial "display-all.html" . }} -->
+  {{range (where .Site.RegularPages "Type" "posts").ByDate.Reverse}}
+  {{if .Title}}
+  <li>
+    {{ dateFormat "2006-01-02" .Date }}
+    <a href="{{ .RelPermalink }}"> {{ .Title }}</a> </li>
+  {{end}}
+  {{end}}
+  </main>
+{{ end }}
