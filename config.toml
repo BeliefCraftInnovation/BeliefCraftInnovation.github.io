@@ -1,4 +1,16 @@
-languageCode = 'en-us'
-title = 'Belief Craft Innovation (术源创新)'
+baseURL = "/"
+title = "BeliefCraft Innovation (术源创新)"
 theme = "bcitheme"
 hasCJKLanguage = true
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.zh]
+    languageCode = "zh-cn"
+    languageName = "中文"
+    weight = 1
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "EN"
+    weight = 2

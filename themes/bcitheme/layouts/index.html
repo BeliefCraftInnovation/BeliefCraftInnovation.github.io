@@ -1,8 +1,76 @@
 {{ define "main" }}
-<main aria-role="main">
-  </header>
-  <div class="homepage_content">
-    {{ .Content }}
-  </div>
-</main>
+<div class="page">
+  <section class="hero">
+    <div class="hero__content" data-animate="fade-up">
+      <p class="eyebrow">BeliefCraft Innovation</p>
+      <h1>{{ i18n "hero_title" }}</h1>
+      <p class="lead">{{ i18n "hero_subtitle" }}</p>
+      <div class="hero__cta">
+        <a class="btn primary" href="{{ "/about/" | relLangURL }}">{{ i18n "hero_cta_primary" }}</a>
+        <a class="btn ghost" href="{{ "/product/" | relLangURL }}">{{ i18n "hero_cta_secondary" }}</a>
+      </div>
+    </div>
+    <div class="hero__visual" data-animate="fade-up">
+      <div class="hero__grid"></div>
+      <img class="hero__image" src="/img/hero-core.svg" alt="BeliefCraft core visual" />
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+  </section>
+
+  <section class="section split">
+    <div class="section__text" data-animate="fade-up">
+      <h2>{{ i18n "section_origin_title" }}</h2>
+      <p>{{ i18n "section_origin_body" }}</p>
+      <div class="chip">{{ i18n "footer_line" }}</div>
+    </div>
+    <div class="section__card" data-animate="fade-up">
+      <div class="card card--glow">
+        <h3>{{ i18n "section_vision_title" }}</h3>
+        <p>{{ i18n "section_vision_body" }}</p>
+      </div>
+      <div class="card card--dark">
+        <h3>{{ i18n "section_speed_title" }}</h3>
+        <p>{{ i18n "section_speed_body" }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section products">
+    <div class="section__header" data-animate="fade-up">
+      <h2>{{ i18n "section_products_title" }}</h2>
+      <a class="link-arrow" href="{{ "/product/" | relLangURL }}">{{ i18n "section_product_cta" }}</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" data-animate="fade-up">
+        <img src="/img/product-app.svg" alt="App preview" />
+        <div class="product-card__body">
+          <div class="pill">{{ i18n "product_coming" }}</div>
+          <h3>{{ i18n "product_app_title" }}</h3>
+          <p>{{ i18n "product_app_body" }}</p>
+        </div>
+      </div>
+      <div class="product-card" data-animate="fade-up">
+        <img src="/img/product-hardware.svg" alt="Hardware concept" />
+        <div class="product-card__body">
+          <div class="pill">{{ i18n "product_coming" }}</div>
+          <h3>{{ i18n "product_hw_title" }}</h3>
+          <p>{{ i18n "product_hw_body" }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section team">
+    <div class="section__text" data-animate="fade-up">
+      <h2>{{ i18n "section_team_title" }}</h2>
+      <p>{{ i18n "section_team_body" }}</p>
+      <a class="btn secondary" href="{{ "/about/" | relLangURL }}">{{ i18n "section_about_cta" }}</a>
+    </div>
+    <div class="section__visual" data-animate="fade-up">
+      <img src="/img/team-constellation.svg" alt="Team constellation" />
+    </div>
+  </section>
+</div>
 {{ end }}

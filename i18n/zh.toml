@@ -1,0 +1,63 @@
+[nav_home]
+other = "主页"
+[nav_about]
+other = "关于我们"
+[nav_products]
+other = "产品"
+[nav_lang]
+other = "语言"
+[brand_name]
+other = "术源创新 BeliefCraft"
+[brand_tagline]
+other = "赋予机器以灵魂"
+
+[hero_title]
+other = "为机器赋予灵魂，让它们在物理空间中解决真实问题"
+[hero_subtitle]
+other = "从源头出发，为机器人打造最本质的生命力与行动力——这是 BeliefCraft 的出发点。"
+[hero_cta_primary]
+other = "了解我们"
+[hero_cta_secondary]
+other = "查看产品"
+
+[section_origin_title]
+other = "BeliefCraft 的出发点"
+[section_origin_body]
+other = "我们相信，真正的智能来自对第一性原理的回归：在源头赋予机器感知、理解与行动的生命力，让它们在物理世界中成为可靠的代理。"
+
+[section_vision_title]
+other = "愿景"
+[section_vision_body]
+other = "赋予机器以灵魂，使其能够在物理空间中帮助人们解决更多实际问题。"
+
+[section_speed_title]
+other = "快速反馈"
+[section_speed_body]
+other = "从算法到系统，我们强调低延迟与稳定闭环，让用户感受到即时、可依赖的反馈。"
+
+[section_products_title]
+other = "产品"
+[product_app_title]
+other = "视频分析 App"
+[product_app_body]
+other = "面向真实场景的视频理解与智能分析，聚焦效率、可解释性与持续学习。"
+[product_hw_title]
+other = "物理空间智能代理"
+[product_hw_body]
+other = "一个在物理空间执行任务的代理型设备，帮助人们完成实际事务。更多细节即将公布。"
+[product_coming]
+other = "敬请期待"
+
+[section_team_title]
+other = "团队"
+[section_team_body]
+other = "我们来自机器人与自动驾驶领域，拥有消费级与自动化架构量产经验（百万级）。核心团队多年 AI 研发与部署经验。"
+
+[section_about_cta]
+other = "了解团队与背景"
+
+[section_product_cta]
+other = "进入产品页"
+
+[footer_line]
+other = "术之源头，赋予机器生命力"

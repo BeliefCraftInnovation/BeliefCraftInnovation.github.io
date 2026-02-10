@@ -1,0 +1,63 @@
+[nav_home]
+other = "Home"
+[nav_about]
+other = "About"
+[nav_products]
+other = "Products"
+[nav_lang]
+other = "Language"
+[brand_name]
+other = "BeliefCraft Innovation"
+[brand_tagline]
+other = "Give Machines a Soul"
+
+[hero_title]
+other = "Give machines a soul so they can solve real problems in physical space"
+[hero_subtitle]
+other = "We start from the source: building the most essential vitality and agency for robots. This is the BeliefCraft origin point."
+[hero_cta_primary]
+other = "Meet BeliefCraft"
+[hero_cta_secondary]
+other = "Explore Products"
+
+[section_origin_title]
+other = "The BeliefCraft Origin"
+[section_origin_body]
+other = "We believe true intelligence comes from first principles: endowing machines with perception, understanding, and agency at the source so they become reliable physical-world agents."
+
+[section_vision_title]
+other = "Vision"
+[section_vision_body]
+other = "Give machines a soul so they can help people solve more real-world problems in physical space."
+
+[section_speed_title]
+other = "Fast Feedback"
+[section_speed_body]
+other = "From algorithms to systems, we prioritize low-latency, stable loops so users feel immediate, dependable feedback."
+
+[section_products_title]
+other = "Products"
+[product_app_title]
+other = "Video Analysis App"
+[product_app_body]
+other = "Real-world video understanding and intelligent analysis with a focus on efficiency, interpretability, and continual learning."
+[product_hw_title]
+other = "Physical-Space Agent"
+[product_hw_body]
+other = "A device that acts in physical environments to help people complete real tasks. Details will be revealed soon."
+[product_coming]
+other = "Coming Soon"
+
+[section_team_title]
+other = "Team"
+[section_team_body]
+other = "We come from robotics and autonomous driving, with consumer-grade and automation architecture mass-production experience (millions of units). The core team has years of AI R&D and deployment experience."
+
+[section_about_cta]
+other = "Team & Background"
+
+[section_product_cta]
+other = "Go to Products"
+
+[footer_line]
+other = "From the source, we give machines vitality"
