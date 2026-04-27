@@ -4,6 +4,8 @@ other = "主页"
 other = "关于我们"
 [nav_products]
 other = "产品"
+[nav_privacy]
+other = "隐私政策"
 [nav_lang]
 other = "语言"
 [brand_name]
@@ -61,3 +63,5 @@ other = "进入产品页"
 
 [footer_line]
 other = "术之源头，赋予机器生命力"
+[footer_privacy]
+other = "TennisActionApp 隐私政策"
