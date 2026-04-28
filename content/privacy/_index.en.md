@@ -2,15 +2,15 @@
 title: "Privacy Policy"
 ---
 
-This Privacy Policy applies to **TennisActionApp** provided by BeliefCraft Innovation. It explains how the current version of the app handles information and sets out our privacy commitments for users and platform review.
+This Privacy Policy applies to **Swrrl** provided by BeliefCraft Innovation. It explains how the current version of the app handles information and sets out our privacy commitments for users and platform review.
 
 ## Scope
 
-This policy applies to the current public version of TennisActionApp and related versions distributed through the App Store or other platforms. If future versions change their features or data practices, we will update this policy accordingly.
+This policy applies to the current public version of Swrrl and related versions distributed through the App Store or other platforms. If future versions change their features or data practices, we will update this policy accordingly.
 
 ## How the Current Version Works
 
-The current version of TennisActionApp **does not require account registration**, and users can access the core features without creating an account.
+The current version of Swrrl **does not require account registration**, and users can access the core features without creating an account.
 
 In future versions, we may offer **optional account registration**. If that functionality is introduced, we will update this Privacy Policy before it is enabled to explain what information may be collected, how it is used, and how it is handled.
 
@@ -46,7 +46,7 @@ If a future version integrates third-party analytics, crash reporting, login, or
 
 ## Children's Privacy
 
-The current version of TennisActionApp is not designed specifically for children. We do not knowingly collect personal information from children. If a parent or guardian believes that a child has provided personal information to us, they may contact us through BeliefCraft Innovation's public channels or the developer contact information shown in the app store listing, and we will address the issue after review.
+The current version of Swrrl is not designed specifically for children. We do not knowingly collect personal information from children. If a parent or guardian believes that a child has provided personal information to us, they may contact us through BeliefCraft Innovation's public channels or the developer contact information shown in the app store listing, and we will address the issue after review.
 
 ## Changes to This Policy
 
