@@ -4,6 +4,8 @@ other = "Home"
 other = "About"
 [nav_products]
 other = "Products"
+[nav_privacy]
+other = "Privacy Policy"
 [nav_lang]
 other = "Language"
 [brand_name]
@@ -61,3 +63,5 @@ other = "Go to Products"
 
 [footer_line]
 other = "From the source, we give machines vitality"
+[footer_privacy]
+other = "Swrrl Privacy Policy"
