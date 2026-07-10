@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ .Title }} · {{ .Params.appName }}</title>
+  <meta name="description" content="{{ .Params.tagline }}">
+  <style>
+    /* ===== Swrrl support page — self-contained theme (PLACEHOLDER brand) ===== */
+    :root {
+      --swrrl-accent: #6C5CE7;
+      --swrrl-accent-2: #A66CFF;
+      --swrrl-bg: #F5F5F7;
+      --swrrl-card: #FFFFFF;
+      --swrrl-text: #1D1D1F;
+      --swrrl-text-soft: #55555B;
+      --swrrl-border: #E5E5EA;
+      --swrrl-radius: 18px;
+      --swrrl-shadow: 0 1px 3px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.05);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --swrrl-bg: #000000;
+        --swrrl-card: #1C1C1E;
+        --swrrl-text: #F5F5F7;
+        --swrrl-text-soft: #A1A1A6;
+        --swrrl-border: #2C2C2E;
+        --swrrl-shadow: 0 1px 3px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.3);
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--swrrl-bg);
+      color: var(--swrrl-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .swrrl-hero {
+      position: relative;
+      background: linear-gradient(135deg, var(--swrrl-accent) 0%, var(--swrrl-accent-2) 100%);
+      color: #fff;
+      padding: 72px 24px 56px;
+      text-align: center;
+    }
+    .swrrl-lang {
+      position: absolute; top: 16px; right: 16px;
+      display: inline-flex; gap: 2px;
+      padding: 3px; border-radius: 980px;
+      background: rgba(255,255,255,.18);
+      backdrop-filter: blur(8px);
+    }
+    .swrrl-lang a {
+      display: inline-block; text-decoration: none;
+      padding: 5px 13px; border-radius: 980px;
+      font-size: 13px; font-weight: 600; line-height: 1;
+      color: #fff; opacity: .85;
+      transition: background .15s ease, opacity .15s ease;
+    }
+    .swrrl-lang a:hover { opacity: 1; }
+    .swrrl-lang a.is-active {
+      background: #fff; color: var(--swrrl-accent); opacity: 1;
+    }
+    .swrrl-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 76px; height: 76px; border-radius: 20px;
+      background: rgba(255,255,255,.18);
+      backdrop-filter: blur(8px);
+      font-size: 40px; font-weight: 700; letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+    .swrrl-hero h1 { margin: 0 0 8px; font-size: 34px; font-weight: 700; letter-spacing: -.5px; }
+    .swrrl-hero p { margin: 0; font-size: 17px; opacity: .92; max-width: 520px; margin-inline: auto; }
+    .swrrl-wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+    .swrrl-section-title { font-size: 22px; font-weight: 700; margin: 8px 0 16px; letter-spacing: -.3px; }
+    .swrrl-card {
+      background: var(--swrrl-card);
+      border: 1px solid var(--swrrl-border);
+      border-radius: var(--swrrl-radius);
+      box-shadow: var(--swrrl-shadow);
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+    .swrrl-faq { padding: 4px 22px; }
+    .swrrl-faq-item { padding: 18px 0; border-bottom: 1px solid var(--swrrl-border); }
+    .swrrl-faq-item:last-child { border-bottom: none; }
+    .swrrl-faq-q { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
+    .swrrl-faq-a { font-size: 16px; color: var(--swrrl-text-soft); margin: 0; }
+    .swrrl-faq-a p { margin: 0 0 10px; }
+    .swrrl-faq-a p:last-child { margin-bottom: 0; }
+    .swrrl-faq-a ul { margin: 6px 0 10px; padding-left: 20px; }
+    .swrrl-faq-a li { margin: 4px 0; }
+    .swrrl-faq-a a { color: var(--swrrl-accent); text-decoration: none; }
+    .swrrl-faq-a a:hover { text-decoration: underline; }
+    .swrrl-contact { padding: 28px 22px; text-align: center; }
+    .swrrl-contact p { margin: 0 0 18px; color: var(--swrrl-text-soft); font-size: 16px; }
+    .swrrl-btn {
+      display: inline-block; text-decoration: none;
+      background: var(--swrrl-accent); color: #fff;
+      font-size: 16px; font-weight: 600;
+      padding: 13px 28px; border-radius: 980px;
+      transition: opacity .15s ease;
+    }
+    .swrrl-btn:hover { opacity: .88; }
+    .swrrl-footer {
+      text-align: center; padding: 28px 20px 48px;
+      color: var(--swrrl-text-soft); font-size: 13px;
+    }
+    .swrrl-footer a { color: var(--swrrl-text-soft); text-decoration: none; }
+    .swrrl-footer a:hover { text-decoration: underline; }
+    .swrrl-footer .dot { margin: 0 8px; opacity: .5; }
+  </style>
+</head>
+<body>
+  <header class="swrrl-hero">
+    <nav class="swrrl-lang" aria-label="Language">
+      {{ range .AllTranslations }}
+      <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} class="is-active" aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </nav>
+    <div class="swrrl-badge">{{ substr .Params.appName 0 1 }}</div>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.tagline }}</p>
+  </header>
+
+  <main class="swrrl-wrap">
+    <h2 class="swrrl-section-title">{{ .Params.faqHeading }}</h2>
+    <div class="swrrl-card">
+      <div class="swrrl-faq">
+        {{ range .Params.faq }}
+        <div class="swrrl-faq-item">
+          <p class="swrrl-faq-q">{{ .q }}</p>
+          <div class="swrrl-faq-a">{{ .a | safeHTML }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+
+    <h2 class="swrrl-section-title">{{ .Params.contactHeading }}</h2>
+    <div class="swrrl-card">
+      <div class="swrrl-contact">
+        <p>{{ .Params.contactBody }}</p>
+        <a class="swrrl-btn" href="mailto:{{ .Params.supportEmail }}">{{ .Params.supportEmail }}</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="swrrl-footer">
+    <span>{{ .Params.footerCopy }}</span><br>
+    <a href="{{ "privacy/" | relLangURL }}">{{ .Params.privacyLabel }}</a>
+    <span class="dot">·</span>
+    <a href="{{ "/" | relLangURL }}">BeliefCraft Innovation</a>
+  </footer>
+</body>
+</html>
