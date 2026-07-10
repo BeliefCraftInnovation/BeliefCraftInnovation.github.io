@@ -38,10 +38,29 @@
       -webkit-font-smoothing: antialiased;
     }
     .swrrl-hero {
+      position: relative;
       background: linear-gradient(135deg, var(--swrrl-accent) 0%, var(--swrrl-accent-2) 100%);
       color: #fff;
       padding: 72px 24px 56px;
       text-align: center;
+    }
+    .swrrl-lang {
+      position: absolute; top: 16px; right: 16px;
+      display: inline-flex; gap: 2px;
+      padding: 3px; border-radius: 980px;
+      background: rgba(255,255,255,.18);
+      backdrop-filter: blur(8px);
+    }
+    .swrrl-lang a {
+      display: inline-block; text-decoration: none;
+      padding: 5px 13px; border-radius: 980px;
+      font-size: 13px; font-weight: 600; line-height: 1;
+      color: #fff; opacity: .85;
+      transition: background .15s ease, opacity .15s ease;
+    }
+    .swrrl-lang a:hover { opacity: 1; }
+    .swrrl-lang a.is-active {
+      background: #fff; color: var(--swrrl-accent); opacity: 1;
     }
     .swrrl-badge {
       display: inline-flex; align-items: center; justify-content: center;
@@ -68,6 +87,12 @@
     .swrrl-faq-item:last-child { border-bottom: none; }
     .swrrl-faq-q { font-size: 17px; font-weight: 600; margin: 0 0 6px; }
     .swrrl-faq-a { font-size: 16px; color: var(--swrrl-text-soft); margin: 0; }
+    .swrrl-faq-a p { margin: 0 0 10px; }
+    .swrrl-faq-a p:last-child { margin-bottom: 0; }
+    .swrrl-faq-a ul { margin: 6px 0 10px; padding-left: 20px; }
+    .swrrl-faq-a li { margin: 4px 0; }
+    .swrrl-faq-a a { color: var(--swrrl-accent); text-decoration: none; }
+    .swrrl-faq-a a:hover { text-decoration: underline; }
     .swrrl-contact { padding: 28px 22px; text-align: center; }
     .swrrl-contact p { margin: 0 0 18px; color: var(--swrrl-text-soft); font-size: 16px; }
     .swrrl-btn {
@@ -89,6 +114,11 @@
 </head>
 <body>
   <header class="swrrl-hero">
+    <nav class="swrrl-lang" aria-label="Language">
+      {{ range .AllTranslations }}
+      <a href="{{ .RelPermalink }}"{{ if eq .Language.Lang $.Language.Lang }} class="is-active" aria-current="true"{{ end }}>{{ .Language.LanguageName }}</a>
+      {{ end }}
+    </nav>
     <div class="swrrl-badge">{{ substr .Params.appName 0 1 }}</div>
     <h1>{{ .Title }}</h1>
     <p>{{ .Params.tagline }}</p>
@@ -101,7 +131,7 @@
         {{ range .Params.faq }}
         <div class="swrrl-faq-item">
           <p class="swrrl-faq-q">{{ .q }}</p>
-          <p class="swrrl-faq-a">{{ .a | safeHTML }}</p>
+          <div class="swrrl-faq-a">{{ .a | safeHTML }}</div>
         </div>
         {{ end }}
       </div>
