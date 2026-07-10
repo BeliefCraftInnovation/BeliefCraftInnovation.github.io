@@ -1,0 +1,20 @@
+---
+title: "Swrrl 支持"
+type: "swrrl"
+layout: "support"
+appName: "Swrrl"
+tagline: "帮助、常见问题解答，以及联系我们的方式。"
+faqHeading: "常见问题"
+faq:
+  - q: "使用 Swrrl 需要注册账号吗？"
+    a: "不需要。"
+  - q: "Swrrl 会把我的视频上传到任何地方吗？"
+    a: "不会，所有处理都在设备本地进行。"
+  - q: "App 没有正确识别我的击球动作，我该怎么办？"
+    a: "TODO"
+contactHeading: "联系支持"
+contactBody: "没有找到你需要的内容？欢迎联系我们，我们会尽快回复。"
+supportEmail: "support@beliefcraft.cloud"
+privacyLabel: "隐私政策"
+footerCopy: "© 术源创新 BeliefCraft Innovation. 保留所有权利。"
+---

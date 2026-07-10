@@ -1,0 +1,20 @@
+---
+title: "Swrrl Support"
+type: "swrrl"
+layout: "support"
+appName: "Swrrl"
+tagline: "Help, answers, and how to reach us."
+faqHeading: "Frequently Asked Questions"
+faq:
+  - q: "Do I need an account to use Swrrl?"
+    a: "No."
+  - q: "Does Swrrl upload my videos anywhere?"
+    a: "No, everything runs on-device."
+  - q: "The app didn't detect my strokes correctly, what can I do?"
+    a: "TODO"
+contactHeading: "Contact Support"
+contactBody: "Can't find what you're looking for? Reach out and we'll get back to you."
+supportEmail: "support@beliefcraft.cloud"
+privacyLabel: "Privacy Policy"
+footerCopy: "© BeliefCraft Innovation. All rights reserved."
+---
