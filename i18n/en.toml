@@ -40,13 +40,13 @@ other = "From algorithms to systems, we prioritize low-latency, stable loops so 
 [section_products_title]
 other = "Products"
 [product_app_title]
-other = "Video Analysis App"
+other = "Swrrl · Tennis Stroke Clips"
 [product_app_body]
-other = "Real-world video understanding and intelligent analysis with a focus on efficiency, interpretability, and continual learning."
+other = "Turns your tennis video into a clip of every stroke. Free, offline, no sign-up. Hardware coming soon."
 [product_hw_title]
-other = "Physical-Space Agent"
+other = "Swrrl hardware"
 [product_hw_body]
-other = "A device that acts in physical environments to help people complete real tasks. Details will be revealed soon."
+other = "Coming soon."
 [product_coming]
 other = "Coming Soon"
 
@@ -65,3 +65,24 @@ other = "Go to Products"
 other = "From the source, we give machines vitality"
 [footer_privacy]
 other = "Swrrl Privacy Policy"
+
+[product_app_pill]
+other = "Now on the App Store"
+
+[product_app_cta]
+other = "Explore Swrrl"
+
+[product_court_pill]
+other = "Venues · Clubs"
+
+[product_court_title]
+other = "Swrrl Court · Multi-camera for venues"
+
+[product_court_body]
+other = "Synchronized multi-camera capture, automatic highlights, auto-edited replays — every court films itself. Running at Chaodao Tennis Center, Shanghai."
+
+[product_court_cta]
+other = "Explore Swrrl Court"
+
+[footer_support]
+other = "Swrrl Support"

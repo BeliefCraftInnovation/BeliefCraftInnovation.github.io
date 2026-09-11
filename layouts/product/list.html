@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="page">
+  <section class="section products" style="padding-top:56px">
+    <div class="section__header" data-animate="fade-up">
+      <h2>{{ .Title }}</h2>
+      <span class="link-arrow" style="opacity:.8">{{ .Params.intro }}</span>
+    </div>
+    <div class="product-grid">
+      {{ range .Params.cards }}
+      <a class="product-card" href="{{ .href | relURL }}" data-animate="fade-up" style="text-decoration:none;color:inherit">
+        <img src="{{ .img }}" alt="{{ .title }}" style="object-fit:cover;object-position:top;height:220px;width:100%">
+        <div class="product-card__body">
+          <div class="pill">{{ .eyebrow }}</div>
+          <h3>{{ .title }}</h3>
+          <p>{{ .body }}</p>
+          <span class="link-arrow">{{ .cta }} →</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

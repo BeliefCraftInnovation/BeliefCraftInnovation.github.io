@@ -40,13 +40,13 @@ other = "从算法到系统，我们强调低延迟与稳定闭环，让用户�
 [section_products_title]
 other = "产品"
 [product_app_title]
-other = "视频分析 App"
+other = "Swrrl · 网球击球剪辑 App"
 [product_app_body]
-other = "面向真实场景的视频理解与智能分析，聚焦效率、可解释性与持续学习。"
+other = "把你的网球视频自动剪成每一拍的 clip。免费、离线、不用注册。硬件即将推出。"
 [product_hw_title]
-other = "物理空间智能代理"
+other = "Swrrl 硬件"
 [product_hw_body]
-other = "一个在物理空间执行任务的代理型设备，帮助人们完成实际事务。更多细节即将公布。"
+other = "即将推出。"
 [product_coming]
 other = "敬请期待"
 
@@ -65,3 +65,24 @@ other = "进入产品页"
 other = "术之源头，赋予机器生命力"
 [footer_privacy]
 other = "Swrrl 隐私政策"
+
+[product_app_pill]
+other = "App Store 已上架"
+
+[product_app_cta]
+other = "了解 Swrrl"
+
+[product_court_pill]
+other = "球馆 · 俱乐部"
+
+[product_court_title]
+other = "Swrrl Court · 场馆多机位拍摄"
+
+[product_court_body]
+other = "多机位同步拍摄、自动识别精彩、自动出片 —— 让每一片场地自己会拍。已在上海超岛网球馆运行。"
+
+[product_court_cta]
+other = "了解 Swrrl Court"
+
+[footer_support]
+other = "Swrrl 支持"
