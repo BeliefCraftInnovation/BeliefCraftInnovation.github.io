@@ -2,7 +2,7 @@
 title: "Products"
 description: "Practical AI products for understanding movement."
 eyebrow: "BeliefCraft Products"
-intro: "We build practical AI tools that turn movement into clear, useful feedback."
+intro: "We enable AI to perceive and understand the world, making life easier. Starting with sports and tennis, we make sure every great moment is captured in full."
 
 swrrl:
   label: "iPhone App"
