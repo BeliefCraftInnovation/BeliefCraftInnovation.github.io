@@ -1,0 +1,120 @@
+{{ define "main" }}
+<div class="product-page">
+  <header class="product-page__intro" data-animate="fade-up">
+    <p class="eyebrow">{{ .Params.eyebrow }}</p>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.intro }}</p>
+  </header>
+
+  <section class="product-detail product-detail--swrrl" aria-labelledby="swrrl-title">
+    <div class="product-detail__hero">
+      <div class="product-detail__copy" data-animate="fade-up">
+        <div class="product-label">{{ .Params.swrrl.label }}</div>
+        <div class="product-heading">
+          <img class="product-icon" src="/img/products/swrrl/icon.jpg" alt="" width="72" height="72" />
+          <div>
+            <h2 id="swrrl-title">{{ .Params.swrrl.title }}</h2>
+            <p class="product-tagline">{{ .Params.swrrl.tagline }}</p>
+          </div>
+        </div>
+        <p class="product-description">{{ .Params.swrrl.description }}</p>
+        <div class="product-actions">
+          <a class="app-store-button" href="{{ .Params.swrrl.app_store_url }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .Params.swrrl.app_store_cta }}">
+            <span class="app-store-button__mark" aria-hidden="true">↗</span>
+            <span><small>{{ .Params.swrrl.availability }}</small>{{ .Params.swrrl.app_store_cta }}</span>
+          </a>
+          <span class="privacy-note">{{ .Params.swrrl.privacy_note }}</span>
+        </div>
+      </div>
+
+      <div class="phone-stage phone-carousel" data-animate="fade-up" data-carousel data-start-index="1" role="region" aria-roledescription="carousel" aria-label="{{ .Params.swrrl.visual_alt }}" tabindex="0">
+        <div class="phone-carousel__viewport" data-carousel-viewport>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="0" data-offset="-1" aria-label="{{ .Params.swrrl.gallery_slide }} 1">
+            <img src="/img/products/swrrl/screenshot-1.webp" alt="" draggable="false" />
+          </button>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="1" data-offset="0" aria-label="{{ .Params.swrrl.gallery_slide }} 2" aria-current="true">
+            <img src="/img/products/swrrl/screenshot-2.webp" alt="" draggable="false" />
+          </button>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="2" data-offset="1" aria-label="{{ .Params.swrrl.gallery_slide }} 3">
+            <img src="/img/products/swrrl/screenshot-3.webp" alt="" draggable="false" />
+          </button>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="3" data-offset="2" aria-label="{{ .Params.swrrl.gallery_slide }} 4">
+            <img src="/img/products/swrrl/screenshot-4.webp" alt="" draggable="false" />
+          </button>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="4" data-offset="hidden" aria-label="{{ .Params.swrrl.gallery_slide }} 5">
+            <img src="/img/products/swrrl/screenshot-5.webp" alt="" draggable="false" />
+          </button>
+          <button class="phone-slide" type="button" data-carousel-slide data-index="5" data-offset="-2" aria-label="{{ .Params.swrrl.gallery_slide }} 6">
+            <img src="/img/products/swrrl/screenshot-6.webp" alt="" draggable="false" />
+          </button>
+        </div>
+
+        <button class="phone-carousel__arrow phone-carousel__arrow--prev" type="button" data-carousel-prev aria-label="{{ .Params.swrrl.gallery_prev }}">
+          <span aria-hidden="true">←</span>
+        </button>
+        <button class="phone-carousel__arrow phone-carousel__arrow--next" type="button" data-carousel-next aria-label="{{ .Params.swrrl.gallery_next }}">
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <div class="phone-carousel__footer">
+          <div class="phone-carousel__dots" role="group" aria-label="{{ .Params.swrrl.visual_alt }}">
+            {{ range $index := seq 6 }}
+            <button type="button" data-carousel-dot data-index="{{ sub $index 1 }}" aria-label="{{ $.Params.swrrl.gallery_slide }} {{ $index }}"{{ if eq $index 2 }} aria-current="true"{{ end }}></button>
+            {{ end }}
+          </div>
+          <span class="phone-carousel__hint">{{ .Params.swrrl.gallery_hint }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-grid feature-grid--four">
+      {{ range .Params.swrrl.features }}
+      <article class="feature-card" data-animate="fade-up">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+
+    <div class="steps-block">
+      <h3 data-animate="fade-up">{{ .Params.swrrl.steps_title }}</h3>
+      <div class="steps-grid">
+        {{ range $index, $step := .Params.swrrl.steps }}
+        <article class="step-card" data-animate="fade-up">
+          <span class="step-number">0{{ add $index 1 }}</span>
+          <h4>{{ $step.title }}</h4>
+          <p>{{ $step.text }}</p>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="product-detail product-detail--court" aria-labelledby="court-title">
+    <div class="court-intro" data-animate="fade-up">
+      <div>
+        <div class="product-label product-label--violet">{{ .Params.court.label }}</div>
+        <h2 id="court-title">{{ .Params.court.title }}</h2>
+        <p class="product-tagline">{{ .Params.court.tagline }}</p>
+      </div>
+      <div>
+        <p class="product-description">{{ .Params.court.description }}</p>
+        <p class="court-venue">{{ .Params.court.venue }}</p>
+      </div>
+    </div>
+
+    <figure class="court-visual" data-animate="fade-up">
+      <img src="/img/products/swrrl-court/six-camera-live.webp" alt="{{ .Params.court.visual_alt }}" />
+    </figure>
+
+    <div class="feature-grid feature-grid--two">
+      {{ range .Params.court.features }}
+      <article class="feature-card feature-card--court" data-animate="fade-up">
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+</div>
+{{ end }}

@@ -1,11 +1,51 @@
 ---
 title: "Products"
+description: "Practical AI products for understanding movement."
+eyebrow: "BeliefCraft Products"
+intro: "We build practical AI tools that turn movement into clear, useful feedback."
+
+swrrl:
+  label: "iPhone App"
+  title: "Swrrl"
+  tagline: "Your tennis strokes, already clipped and ready to study."
+  description: "Swrrl automatically finds every forehand, backhand, and serve in your tennis video, then turns them into clean clips that stay centered on you. Compare, slow down, zoom in, and focus on the details that improve your game."
+  availability: "Available on the App Store"
+  app_store_cta: "Download on the App Store"
+  app_store_url: "https://apps.apple.com/app/swrrl-tennis-stroke-clips/id6768177890"
+  privacy_note: "No account · Fully offline · Nothing uploaded"
+  visual_alt: "Swrrl app showing automatically clipped and tracked tennis strokes"
+  gallery_prev: "Previous screen"
+  gallery_next: "Next screen"
+  gallery_slide: "View Swrrl screen"
+  gallery_hint: "Drag or swipe through all 6 screens"
+  features:
+    - title: "Automatic stroke clips"
+      text: "Finds forehands, backhands, and serves, then separates each stroke into its own clip."
+    - title: "Player tracking"
+      text: "Keeps you centered even when you move across the frame."
+    - title: "Fine-grained playback"
+      text: "Adjust speed, zoom, and clip length to examine the details that matter."
+    - title: "Private by design"
+      text: "Runs on your device with no account, cloud upload, or data collection."
+  steps_title: "Three simple steps"
+  steps:
+    - title: "Record"
+      text: "Set up your phone and film a match, practice session, drill, or wall rally."
+    - title: "Import"
+      text: "Choose the video in Swrrl. Stroke detection and player tracking run automatically."
+    - title: "Review"
+      text: "Compare clips, slow them down, zoom in, and save the moments you want to keep."
+
+court:
+  label: "Multi-Camera Court System"
+  title: "Swrrl Court"
+  tagline: "Turn every court into a content hub, where every great moment is captured in full."
+  description: "Swrrl Court is a highlight replay system for tennis venues, automatically capturing, live-streaming, and analyzing every point so it can be seen, reviewed, and shared from every angle."
+  venue: "Swrrl Court is installed and running at Superisland in Shanghai; the live court views shown here were captured on site."
+  visual_alt: "Swrrl Court Live six-camera capturing system showing five views of the Superisland tennis court and one depth map"
+  features:
+    - title: "Automatic capture and live streaming"
+      text: "Synchronized cameras automatically record every point and support live streaming from the court."
+    - title: "Analysis and highlight replay"
+      text: "Review movement and rallies from more angles, then preserve and share every great moment."
 ---
-
-We are building two product lines: a video analysis app and a physical-space intelligent agent device. Specific details are not available yet, but we want this page to spark your curiosity.
-
-### Video Analysis App
-Real-world video understanding and intelligent analytics with a focus on efficiency, interpretability, and continual learning.
-
-### Physical-Space Agent
-A device that acts in physical environments to help people complete real tasks. More details are coming soon.
