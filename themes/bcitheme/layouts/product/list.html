@@ -104,7 +104,7 @@
     </div>
 
     <figure class="court-visual" data-animate="fade-up">
-      <img src="/img/products/swrrl-court/six-camera-live.webp" alt="{{ .Params.court.visual_alt }}" />
+      <img src="/img/products/swrrl-court/six-camera-live-16x9-v2.webp" alt="{{ .Params.court.visual_alt }}" />
     </figure>
 
     <div class="feature-grid feature-grid--two">
@@ -114,6 +114,19 @@
         <p>{{ .text }}</p>
       </article>
       {{ end }}
+    </div>
+  </section>
+
+  <section class="product-detail product-detail--camera" aria-labelledby="camera-title">
+    <div class="camera-teaser" data-animate="fade-up">
+      <div class="camera-teaser__copy">
+        <div class="product-label product-label--camera">{{ .Params.camera.label }}</div>
+        <h2 id="camera-title">{{ .Params.camera.title }}</h2>
+        <p>{{ .Params.camera.description }}</p>
+      </div>
+      <div class="camera-teaser__mark" aria-hidden="true">
+        <span></span>
+      </div>
     </div>
   </section>
 </div>

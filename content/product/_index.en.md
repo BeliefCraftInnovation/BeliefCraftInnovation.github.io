@@ -2,7 +2,7 @@
 title: "Products"
 description: "Practical AI products for understanding movement."
 eyebrow: "BeliefCraft Products"
-intro: "We build practical AI tools that turn movement into clear, useful feedback."
+intro: "We enable AI to perceive and understand the world, making life easier. Starting with sports and tennis, we make sure every great moment is captured in full."
 
 swrrl:
   label: "iPhone App"
@@ -48,4 +48,9 @@ court:
       text: "Synchronized cameras automatically record every point and support live streaming from the court."
     - title: "Analysis and highlight replay"
       text: "Review movement and rallies from more angles, then preserve and share every great moment."
+
+camera:
+  label: "In-house Capture Hardware"
+  title: "Coming Soon"
+  description: "Our capture hardware is in development. More details will be announced soon."
 ---
