@@ -48,4 +48,9 @@ court:
       text: "Synchronized cameras automatically record every point and support live streaming from the court."
     - title: "Analysis and highlight replay"
       text: "Review movement and rallies from more angles, then preserve and share every great moment."
+
+camera:
+  label: "In-house Camera"
+  title: "Coming Soon"
+  description: "Our camera is in development. More details will be announced soon."
 ---
