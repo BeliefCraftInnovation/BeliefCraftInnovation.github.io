@@ -50,7 +50,7 @@ court:
       text: "从更多角度分析和回看动作与回合，让精彩被完整保留、轻松分享。"
 
 camera:
-  label: "自研拍摄硬件"
+  label: "自主拍摄硬件"
   title: "Coming Soon"
   description: "我们的拍摄硬件正在开发中，更多信息即将公布。"
 ---
