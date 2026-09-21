@@ -50,7 +50,7 @@ court:
       text: "Review movement and rallies from more angles, then preserve and share every great moment."
 
 camera:
-  label: "In-house Camera"
+  label: "In-house Capture Hardware"
   title: "Coming Soon"
-  description: "Our camera is in development. More details will be announced soon."
+  description: "Our capture hardware is in development. More details will be announced soon."
 ---
